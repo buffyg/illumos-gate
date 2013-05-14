@@ -1,0 +1,7 @@
+THIRDPARTYLICENSE
+THIRDPARTYLICENSE.*
+/.build.tstamp
+/ELF-data.*/
+/check-*.out
+/clobber-*.out
+/install-i386.out

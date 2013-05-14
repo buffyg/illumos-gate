@@ -1,0 +1,5 @@
+*.class
+*.jar
+*.java
+/gkadmin
+native/i386/libkadmin.so.1

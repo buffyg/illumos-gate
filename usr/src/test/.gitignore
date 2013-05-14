@@ -1,0 +1,17 @@
+os-tests/tests/*/*.o
+zfs-tests/cmd/*/*.o
+os-tests/tests/poll/poll_test
+zfs-tests/cmd/chg_usr_exec/chg_usr_exec
+zfs-tests/cmd/devname2devid/devname2devid
+zfs-tests/cmd/dir_rd_update/dir_rd_update
+zfs-tests/cmd/file_check/file_check
+zfs-tests/cmd/file_trunc/file_trunc
+zfs-tests/cmd/file_write/file_write
+zfs-tests/cmd/largest_file/largest_file
+zfs-tests/cmd/mkbusy/mkbusy
+zfs-tests/cmd/mktree/mktree
+zfs-tests/cmd/mmapwrite/mmapwrite
+zfs-tests/cmd/randfree_file/randfree_file
+zfs-tests/cmd/readmmap/readmmap
+zfs-tests/cmd/rename_dir/rename_dir
+zfs-tests/cmd/rm_lnkcnt_zero_file/rm_lnkcnt_zero_file

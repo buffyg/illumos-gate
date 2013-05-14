@@ -1,0 +1,8 @@
+*.jar
+*.class
+/SUNWbinfiles.manifest
+/SUNWfiles.manifest
+bin/dhcpmgr
+com/sun/dhcpmgr/bridge/com_sun_dhcpmgr_bridge_Bridge.h
+com/sun/dhcpmgr/data/DhcpConfigOpts.java
+lib/dhcpmgr.so.1

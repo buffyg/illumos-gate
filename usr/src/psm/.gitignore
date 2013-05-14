@@ -1,0 +1,4 @@
+stand/bootblks/ufs/i386/installboot
+stand/bootblks/ufs/i386/mboot
+stand/bootblks/ufs/i386/mboot.exec
+stand/bootblks/ufs/i386/mboot.o

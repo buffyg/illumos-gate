@@ -1,0 +1,8 @@
+debug32/
+debug64/
+/*/genunix/obj32/
+/*/genunix/obj64/
+*/arcfour/*.s
+*/md5/*.s
+*/sha1/*.s
+*/sha2/*.s
