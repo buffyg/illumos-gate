@@ -1,4 +1,5 @@
 *.o
+/clobber-*.out
 aw/aw
 codereview/codereview
 codesign/findcrypto

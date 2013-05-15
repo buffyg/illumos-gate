@@ -1,0 +1,7 @@
+*.class
+*.jar
+*.java
+com/sun/audit/AuditSession.h
+common/adt_jni_event.c
+common/mapfile-vers
+*/libadt_jni.so.1

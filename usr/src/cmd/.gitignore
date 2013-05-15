@@ -1041,6 +1041,7 @@ picl/plugins/common/*/*.so
 picl/plugins/lib/picld_pluginutil/*/*.so
 picl/plugins/lib/picld_pluginutil/*/*.so.1
 picl/plugins/lib/picld_pluginutil/*/lint.out
+picl/plugins/lib/picld_pluginutil/*/llib-lpicld_pluginutil.ln
 picl/prtpicl/prtpicl
 platexec/platexec
 plimit/*/plimit
@@ -1234,6 +1235,9 @@ sendmail/cf/*.cf
 sendmail/cf/*/*.cf
 sendmail/db/libdb.a
 sendmail/lib*/lib*.a
+sendmail/libmilter/*/libmilter.so.1
+sendmail/libmilter/*/lint.out
+sendmail/libmilter/*/llib-lmilter.ln
 sendmail/src/sendmail
 setfacl/setfacl
 setmnt/setmnt
@@ -1297,6 +1301,9 @@ stmfproxy/stmfproxy/svc-stmfproxy
 stmfsvc/svc-stmf
 stmsboot/stmsboot
 stmsboot/stmsboot_util
+streams/log/strace
+streams/log/strclean
+streams/log/strerr
 streams/strcmd/strchg
 streams/strcmd/strconf
 strings/*/strings

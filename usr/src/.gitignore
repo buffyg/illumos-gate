@@ -1,7 +1,14 @@
+.make.state
 THIRDPARTYLICENSE
 THIRDPARTYLICENSE.*
 /.build.tstamp
-/ELF-data.*/
 /check-*.out
 /clobber-*.out
-/install-i386.out
+/ELF-data.*/
+/install-*.out
+/install-nd-*.out
+/lint-*.out
+/lint-noise-*.out
+/lint-noise-*.ref
+/noise-*.out
+/noise-*.ref
