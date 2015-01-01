@@ -42,6 +42,7 @@
  */
 /*
  * Copyright (c) 2001, 2010, Oracle and/or its affiliates. All rights reserved.
+ * Copyright 2014, Nexenta Systems, Inc. All rights reserved.
  */
 
 #include "includes.h"
@@ -2006,6 +2007,7 @@ prepare_for_ssh2_kex(void)
 		xfree(myproposal[PROPOSAL_LANG_CTOS]);
 
 	kex->kex[KEX_DH_GRP1_SHA1] = kexdh_server;
+	kex->kex[KEX_DH_GRP14_SHA1] = kexdh_server;
 	kex->kex[KEX_DH_GEX_SHA1] = kexgex_server;
 #ifdef GSSAPI
 	kex->kex[KEX_GSS_GRP1_SHA1] = kexgss_server;

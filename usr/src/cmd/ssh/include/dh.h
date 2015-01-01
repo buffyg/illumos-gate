@@ -34,6 +34,9 @@ extern "C" {
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+/*
+ * Copyright 2014 Nexenta Systems, Inc.  All rights reserved.
+ */
 struct dhgroup {
 	int size;
 	BIGNUM *g;
@@ -44,6 +47,7 @@ DH	*choose_dh(int, int, int);
 DH	*dh_new_group_asc(const char *, const char *);
 DH	*dh_new_group(BIGNUM *, BIGNUM *);
 DH	*dh_new_group1(void);
+DH	*dh_new_group14(void);
 
 void	 dh_gen_key(DH *, int);
 int	 dh_pub_is_valid(DH *, BIGNUM *);

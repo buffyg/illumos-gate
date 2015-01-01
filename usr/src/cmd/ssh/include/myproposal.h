@@ -24,6 +24,7 @@
 
 /*
  * Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
+ * Copyright 2014 Nexenta Systems, Inc.  All rights reserved.
  * Use is subject to license terms.
  */
 
@@ -38,6 +39,7 @@ extern "C" {
 
 
 #define	KEX_DEFAULT_KEX			"diffie-hellman-group-exchange-sha1," \
+					"diffie-hellman-group14-sha1," \
 					"diffie-hellman-group1-sha1"
 
 #define	KEX_DEFAULT_PK_ALG		"ssh-rsa,ssh-dss"

@@ -23,6 +23,7 @@
  */
 /*
  * Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
+ * Copyright 2014 Nexenta Systems, Inc.  All rights reserved.
  * Use is subject to license terms.
  */
 
@@ -166,6 +167,7 @@ ssh_kex2(char *host, struct sockaddr *hostaddr)
         kex = kex_setup(host, myproposal, kex_hook);
 	kex_start(kex);
         kex->kex[KEX_DH_GRP1_SHA1] = kexdh_client;
+        kex->kex[KEX_DH_GRP14_SHA1] = kexdh_client;
         kex->kex[KEX_DH_GEX_SHA1] = kexgex_client;
 #ifdef GSSAPI
 	kex->kex[KEX_GSS_GRP1_SHA1] = kexgss_client;

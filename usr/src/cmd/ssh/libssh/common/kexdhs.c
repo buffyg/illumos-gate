@@ -22,6 +22,10 @@
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+/*
+ * Copyright 2014 Nexenta Systems, Inc. All rights reserved.
+ */
+
 #include "includes.h"
 RCSID("$OpenBSD: kexdh.c,v 1.18 2002/03/18 17:50:31 provos Exp $");
 
@@ -51,7 +55,17 @@ kexdh_server(Kex *kex)
 	u_int slen;
 
 	/* generate server DH public key */
-	dh = dh_new_group1();
+	switch(kex->kex_type) {
+	case KEX_DH_GRP1_SHA1:
+		dh = dh_new_group1();
+		break;
+	case KEX_DH_GRP14_SHA1:
+		dh = dh_new_group1();
+		break;
+	default:
+		fatal("%s: Unexpected KEX type %d", __func__, kex->kex_type);
+		break;
+	}
 	dh_gen_key(dh, kex->we_need * 8);
 
 	debug("expecting SSH2_MSG_KEXDH_INIT");

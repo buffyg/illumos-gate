@@ -23,6 +23,7 @@
  */
 /*
  * Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
+ * Copyright 2014 Nexenta Systems, Inc.  All rights reserved.
  * Use is subject to license terms.
  */
 
@@ -57,6 +58,7 @@ extern "C" {
 #endif /* GSSAPI */
 
 #define	KEX_DH1		"diffie-hellman-group1-sha1"
+#define	KEX_DH14	"diffie-hellman-group14-sha1"
 #define	KEX_DHGEX	"diffie-hellman-group-exchange-sha1"
 
 enum kex_init_proposals {
@@ -81,6 +83,7 @@ enum kex_modes {
 
 enum kex_exchange {
 	KEX_DH_GRP1_SHA1,
+	KEX_DH_GRP14_SHA1,
 	KEX_DH_GEX_SHA1,
 #ifdef GSSAPI
 	KEX_GSS_GRP1_SHA1,

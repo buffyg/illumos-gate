@@ -22,6 +22,7 @@
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
+ * Copyright 2014 Nexenta Microsystems, Inc.  All rights reserved.
  * Use is subject to license terms.
  */
 
@@ -412,6 +413,8 @@ choose_kex(Kex *k, char *client, char *server)
 	/* XXX Finish 3.6/7 merge of kex stuff -- choose_kex() done */
 	if (strcmp(k->name, KEX_DH1) == 0) {
 		k->kex_type = KEX_DH_GRP1_SHA1;
+	} else if (strcmp(k->name, KEX_DH14) == 0) {
+		k->kex_type = KEX_DH_GRP14_SHA1;
 	} else if (strcmp(k->name, KEX_DHGEX) == 0) {
 		k->kex_type = KEX_DH_GEX_SHA1;
 #ifdef GSSAPI
